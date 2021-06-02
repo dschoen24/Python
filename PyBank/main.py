@@ -50,10 +50,16 @@ output_file = os.path.join(os.getcwd(), "Analysis", "budget_data.txt")
 with open(output_file, "w") as datafile:
     # Write the commands
     datafile.write("Financial Analysis")
+    datafile.write('\n')
     datafile.write("--------------------------")
+    datafile.write('\n')
     datafile.write(f"Total Months:  {len(total_months)}")
+    datafile.write('\n')
     datafile.write(f"Total:  ${sum(total_profit)}")
+    datafile.write('\n')
     datafile.write(f"Average Change:  {round(sum(monthly_profit_change) / len(monthly_profit_change),2)}")
+    datafile.write('\n')
     datafile.write(f"Greatest Increase In Profits:  {total_months[greatest_increase_month]}(${(str(greatest_increase))})")
+    datafile.write('\n')
     datafile.write(f"Greatest Decrease In Profits:  {total_months[greatest_decrease_month]}(${(str(greatest_decrease))})")
 
