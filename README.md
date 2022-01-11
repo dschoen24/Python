@@ -1,4 +1,4 @@
-# python-challenge
+# Python
 Create a new repository for this project called python-challenge. Do not add this homework to an existing repository.
 
 
